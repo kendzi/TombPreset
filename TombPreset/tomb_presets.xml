@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="Historic tombs" description="Presets for historic tombs"
+	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
+	
+	>
+<!-- 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
+<!-- 	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd" -->
+
+<!-- Many images come from wiki.openstreetmap.org -->
+<!--
+    Tomb images come from http://wiki.openstreetmap.org
+-->
+  
+     <group name="Tombs" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
+
+     	<item name="Tomb" type="relation,closedway,way,node" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
+     		<link href="http://wiki.openstreetmap.org/wiki/Tag:historic%3Dtomb" 
+     			pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic%3Dtomb"/>
+     		
+     		<key key="historic" value="tomb" />
+     		
+			<label text="Tombs"  /><!-- pl.text="Grób" -->
+			<combo text="Tomb type" pl.text="Rodzaj grobu" key="tomb">
+				<list_entry value="tombstone" 		icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_tombstone.jpg"/>
+				<list_entry value="tumulus" 		icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_tumulus.jpg"/>
+				<list_entry value="rock-cut"   	 	icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_rock-cut.jpg"/>
+				<list_entry value="war_grave"   	icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_war_grave.jpg"/>
+				<list_entry value="mausoleum"    	icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_mausoleum.jpg"/>
+				<list_entry value="columbarium"    	icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_columbarium.jpg"/>
+				<list_entry value="pyramid"    		icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_pyramid.jpg"/> 
+				
+			</combo>	
+		
+	     	<optional>
+										
+				<text text="Religion" key="religion"/>
+				<text text="Denomination" key="denomination"/>
+				
+				<space/>				
+				<label text="Person data" 			 /> <!-- pl:text="Dane osoby" -->
+				<text text="- name" 								key="person:name"/> <!-- pl:text="- imie" -->
+				<text text="- birth" 								key="person:birth"/> <!--pl:text="- urodzony" -->
+				<text text="- death" 								key="person:death"/> <!--pl:text="- zmarły"	-->
+				<text text="- wikipedia article" 					key="person:wikipedia"/> <!--pl:text="- artykuł wikipedi" -->
+				<text text="- image"  							    key="person:image"/> <!--pl:text="- zdjęcie" -->
+									
+				<space/>				
+				<label text="Tomb data"				 /> <!-- pl:text="Dane grobu" -->
+				<text text="- wikipedia article" 					key="wikipedia"/> <!-- pl:text="- artykuł wikipedi" -->
+				<text text="- image"								key="image"/> <!-- pl:text="- zdjęcie"	 -->
+				
+			</optional>	
+     	</item>
+    </group>
+</presets>
