@@ -39,17 +39,16 @@
 				<combo text="Religion" key="religion">
 					<list_entry value="christian" 		icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_christian.png"/>
 					<list_entry value="jewish" 			icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_jewish.png"/>
-					<list_entry value="muslim" 			icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_muslim.png"/>					
-					<list_entry value="unitarian" 		 />
+					<list_entry value="muslim" 			icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_muslim.png"/>
 				</combo>
 				
 				 
 <!-- 				<text text="Denomination" key="denomination"/> -->
-				<combo text="Denomination" key="denomination">
-					<list_entry value="roman_catholic" 	display_value="roman catholic"	/>					
-					<list_entry value="orthodox" 			/>					
-					<list_entry value="protestant" 			/>					
-				</combo>
+<!-- 				<combo text="Denomination" key="denomination"> -->
+<!-- 					<list_entry value="roman_catholic" 	display_value="roman catholic"	/>					 -->
+<!-- 					<list_entry value="orthodox" 			/>					 -->
+<!-- 					<list_entry value="protestant" 			/>					 -->
+<!-- 				</combo> -->
 				
 				
 				
