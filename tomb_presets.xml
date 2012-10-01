@@ -54,15 +54,15 @@
 				
 				<space/>				
 				<label text="Person data" 				pl.text="Dane osoby" /> 
-				<text text="- name" 				 	pl.text="- imie"				key="person:name"/> 
+				<text text="- name" 				 	pl.text="- imię"				key="person:name"/> 
 				<text text="- birth" 					pl.text="- urodzony"			key="person:birth"/>  
 				<text text="- death" 					pl.text="- zmarły"				key="person:death"/>  
-				<text text="- wikipedia article" 		pl.text="- artykuł wikipedi"	key="person:wikipedia"/> 
+				<text text="- wikipedia article" 		pl.text="- artykuł wikipedii"	key="person:wikipedia"/> 
 				<text text="- image"  					pl.text="- zdjęcie"		    	key="person:image"/> 
 									
 				<space/>				
 				<label text="Tomb data"				 	pl.text="Dane grobu" /> 
-				<text text="- wikipedia article" 		pl.text="- artykuł wikipedi"	key="wikipedia"/> 
+				<text text="- wikipedia article" 		pl.text="- artykuł wikipedii"	key="wikipedia"/> 
 				<text text="- image"					pl.text="- zdjęcie"				key="image"/> 
 				
 			</optional>	
