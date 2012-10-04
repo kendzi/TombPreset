@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="Historic tombs" description="Presets for historic tombs"
-	version="0.2"
+	version="0.4"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
 	
@@ -66,6 +66,23 @@
 				<text text="- image"					pl.text="- zdjęcie"				key="image"/> 
 				
 			</optional>	
+     	</item>
+     	
+     	<item name="Tomb person" type="relation" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
+     		<link href="http://wiki.openstreetmap.org/wiki/Tag:historic%3Dtomb" 
+     			pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic%3Dtomb"/>
+     		
+     		<key key="type" value="tomb_person" />
+     		<label text="Person data" 				pl.text="Dane osoby" /> 
+			<text text="- name" 				 	pl.text="- imię"				key="name"/> 
+			<text text="- birth" 					pl.text="- urodzony"			key="birth"/>  
+			<text text="- death" 					pl.text="- zmarły"				key="death"/>  
+			<text text="- wikipedia article" 		pl.text="- artykuł wikipedii"	key="wikipedia"/> 
+			<text text="- image"  					pl.text="- zdjęcie"		    	key="image"/> 
+			
+			<roles>
+                <role key="tomb" text="A place where is the tomb" requisite="required" count="1" type="node" />
+            </roles>
      	</item>
     </group>
 </presets>
