@@ -13,9 +13,9 @@
     Tomb images come from http://wiki.openstreetmap.org
 -->
   
-     <group name="Tombs" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
+     <group name="Tombs" pl.name="Groby" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
 
-     	<item name="Tomb" type="relation,closedway,way,node" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
+     	<item name="Tomb" pl.name="Grób" type="closedway,way,node" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
      		<link href="http://wiki.openstreetmap.org/wiki/Tag:historic%3Dtomb" 
      			pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic%3Dtomb"/>
      		
@@ -30,13 +30,13 @@
 				<list_entry value="mausoleum"    	icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_mausoleum.jpg"/>
 				<list_entry value="columbarium"    	icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_columbarium.jpg"/>
 				<list_entry value="pyramid"    		icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_pyramid.jpg"/> 
-				
+				<list_entry value="crypt"/>
 			</combo>	
 		
 	     	<optional>
 										
 <!-- 				<text text="Religion" key="religion"/> -->
-				<combo text="Religion" key="religion">
+				<combo text="Religion" pl.text="Religia" key="religion">
 					<list_entry value="christian" 		icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_christian.png"/>
 					<list_entry value="jewish" 			icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_jewish.png"/>
 					<list_entry value="muslim" 			icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/placeofworship_muslim.png"/>
@@ -52,13 +52,13 @@
 				
 				
 				
-				<space/>				
-				<label text="Person data" 				pl.text="Dane osoby" /> 
+				<!--<space/>-->				
+				<!--<label text="Person data" 				pl.text="Dane osoby" /> 
 				<text text="- name" 				 	pl.text="- imię"				key="person:name"/> 
 				<text text="- birth" 					pl.text="- urodzony"			key="person:birth"/>  
 				<text text="- death" 					pl.text="- zmarły"				key="person:death"/>  
 				<text text="- wikipedia article" 		pl.text="- artykuł wikipedii"	key="person:wikipedia"/> 
-				<text text="- image"  					pl.text="- zdjęcie"		    	key="person:image"/> 
+				<text text="- image"  					pl.text="- zdjęcie"		    	key="person:image"/> -->
 									
 				<space/>				
 				<label text="Tomb data"				 	pl.text="Dane grobu" /> 
@@ -68,20 +68,25 @@
 			</optional>	
      	</item>
      	
-     	<item name="Tomb person" type="relation" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
+     	<item name="Person" pl.name="Osoba" type="relation" icon="http://openstreetmap.org.pl/kendzi/TombPreset/cc2/tomb_icon.png" >
      		<link href="http://wiki.openstreetmap.org/wiki/Tag:historic%3Dtomb" 
      			pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic%3Dtomb"/>
      		
-     		<key key="type" value="tomb_person" />
+     		<key key="type" value="person" />
      		<label text="Person data" 				pl.text="Dane osoby" /> 
-			<text text="- name" 				 	pl.text="- imię"				key="name"/> 
-			<text text="- birth" 					pl.text="- urodzony"			key="birth"/>  
-			<text text="- death" 					pl.text="- zmarły"				key="death"/>  
+			<text text="- name" 				 	pl.text="- imię i nazwisko"				key="name"/> 
+			<text text="- birth" 					pl.text="- data urodzenia"			key="birth"/>  
+			<text text="- death" 					pl.text="- data śmierci"				key="death"/>  
 			<text text="- wikipedia article" 		pl.text="- artykuł wikipedii"	key="wikipedia"/> 
-			<text text="- image"  					pl.text="- zdjęcie"		    	key="image"/> 
+			<text text="- image"  					pl.text="- zdjęcie"		    	key="image"/>
+			<text text="- description" 					pl.text="- krótki opis"			key="description"/>
+			<text text="- where lived" 					pl.text="- gdzie żył"			key="lived_in"/>
 			
-			<roles>
-                <role key="tomb" text="A place where is the tomb" requisite="required" count="1" type="node" />
+	<roles>
+                <role key="tomb" text="A place where is the tomb" pl.text="Miejsce, gdzie spoczywają szczątki" requisite="required" count="1" type="node,closedway" />
+		<role key="memorial" text="Memorial of person" pl.text="Miejsce upamiętniające osobę" requisite="required" count="1" type="node,closedway" />
+		<role key="deathplace" text="Place of death" pl.text="Miejsce śmierci osoby" requisite="required" count="1" type="node,closedway" />
+		<role key="birthplace" text="Place of birth" pl.text="Miejsce urodzenia osoby" requisite="required" count="1" type="node,closedway" />
             </roles>
      	</item>
     </group>
