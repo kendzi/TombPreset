@@ -75,12 +75,13 @@
      		<key key="type" value="person" />
      		<label text="Person data" 				pl.text="Dane osoby" /> 
 			<text text="- name" 				 	pl.text="- imię i nazwisko"				key="name"/> 
-			<text text="- birth" 					pl.text="- data urodzenia"			key="birth"/>  
-			<text text="- death" 					pl.text="- data śmierci"				key="death"/>  
+			<text text="- born" 					pl.text="- data urodzenia"				key="born"/>  
+			<text text="- died" 					pl.text="- data śmierci"				key="died"/>  
 			<text text="- wikipedia article" 		pl.text="- artykuł wikipedii"	key="wikipedia"/> 
 			<text text="- image"  					pl.text="- zdjęcie"		    	key="image"/>
 			<text text="- description" 					pl.text="- krótki opis"			key="description"/>
 			<text text="- where lived" 					pl.text="- gdzie żył"			key="lived_in"/>
+			<text text="- family name" 								key="family_name"/>
 			
 	<roles>
                 <role key="tomb" text="A place where is the tomb" pl.text="Miejsce, gdzie spoczywają szczątki" requisite="required" count="1" type="node,closedway" />
